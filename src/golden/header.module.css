@@ -1,0 +1,47 @@
+:root{
+    --decorative-color:#FED136;
+    --main-color:#222222;
+    --gray-text:#777777;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 934px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40PX;
+    padding-bottom: 90px;
+}
+.navigation{
+    display: flex;
+    gap: 40px;
+}
+.logo{
+    font-family: 'Bilbo Swash Caps';
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--decorative-color);
+}
+.nav_li{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform:uppercase;
+}
+.navigation a{
+    transition: transform 0.3s ease;
+    color: var(--decorative-color);
+}
+.navigation a:hover{
+    color: #BE9710;
+    transform: scale(1.05);
+}

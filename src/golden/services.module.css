@@ -1,0 +1,44 @@
+/* .container{
+    width: 934px;
+    margin: 0 auto;
+} */
+.titleContent{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.services{
+    display: flex;
+    gap: 55px;
+    margin: 90px 200px 120px;
+}
+.articles{
+    font-family: 'Montserrat' ;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.serv_li{
+    width: calc((100% - 100px) / 3);
+}
+.serv_li:nth-of-type(3) .icon svg{
+margin: 14px 20px;
+}
+.description{
+    font-family: 'RobotoSlab';
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-text);
+    text-align: center;
+}
+.icon{
+    width: 70px;
+    height: 69px;
+    margin: 0 auto;
+    border: 3px solid #FED136;
+    border-radius: 50px;
+}
+.icon svg{
+    margin: 14px 14px;
+}
