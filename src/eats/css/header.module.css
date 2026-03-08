@@ -1,0 +1,41 @@
+:root{
+    --dark-text:#252B42;
+    --decorative-color:#FA4A0C;
+    --white-text:#FFFFFF;
+    --grey-text:#737373;
+}
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header_items{
+    display: flex;
+    justify-content: space-between;
+    gap: 465px;
+    margin: 0;
+}
+.navigation_ul{
+    display: flex;
+    align-items: center;
+    gap: 115px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px ;
+    margin-right: 165px;
+    width: 580px;
+}
+.nav_items{
+    color: var(--dark-text);
+}
+.nav_items:hover{
+    color: var(--decorative-color);
+    cursor: pointer;
+}

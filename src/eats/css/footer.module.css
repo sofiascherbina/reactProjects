@@ -1,0 +1,24 @@
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+footer{
+    background-color: inherit;
+    padding: 0;
+}
+footer .address{
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 700;
+    color: #5C5C5C;
+} 
+.footer_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0 0;
+    margin-bottom: 50px;
+}
+.link_secondary{
+    color:#5C5C5C ;
+}

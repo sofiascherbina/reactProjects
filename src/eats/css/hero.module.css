@@ -1,0 +1,54 @@
+.article{ 
+    height: 619px;
+    background-image: url(./img/background-top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 99vw;
+    text-align: center;
+    padding-top: 70px;
+    color: var(--white-text);
+}
+.top_p{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+.article h1{
+    font-family: "Poppins";
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 10px auto 0;
+    width: 800px;
+}
+.down_p{
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 500;
+}
+.buttTop{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 70px auto 300px;
+}
+.buttTop_el{ 
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white-text);
+    background-color: inherit;
+    border:1px solid var(--white-text);
+    border-radius: 30px;
+    width: 236px;
+    height: 68px; 
+    padding: 15px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+.buttTop_el:hover , .bottomButton:hover{
+    background-color: var(--decorative-color);
+    border: none;
+    transform: scale(1.05)
+}
