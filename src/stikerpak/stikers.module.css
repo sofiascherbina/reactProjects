@@ -14,7 +14,7 @@
     position: relative;
 }
 .label{
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     font-family: "Chau Philomene One";
     font-size: 30px;
@@ -58,4 +58,18 @@
     font-family: "Chau Philomene One";
     font-size: 15px;
     color: #AF8F7E;
+}
+.counterText{
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding-top: 3px;
+    font-family: "Chau Philomene One";
+    background-color: #DFC1CB ;
+    color: white;
+    text-align: center;
 }
