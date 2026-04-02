@@ -6,16 +6,22 @@ export default function StickerList({stikers}){
         setSticker(label)
         counter(label);
     }
-    const [selectedArr, setSelected] = useState([]);
+    const [selectedArr, setSelected] = useState(()=>{
+        let savedStik = localStorage.getItem("stikers");
+        return savedStik ? JSON.parse(savedStik) : [];
+    });
     const addToSel=(stiker)=>{
             if(!selectedArr.includes(stiker)){
-                setSelected([...selectedArr, stiker])
-            }
+                let newArr = [...selectedArr, stiker];
+                setSelected(newArr);
+                localStorage.setItem("stikers", JSON.stringify(newArr));
+            }  
         return selectedArr
     }
     const deleteFromSel=(label)=>{
         let filteredList = selectedArr.filter(stik => stik !== label)
-        return setSelected(filteredList) 
+        setSelected(filteredList);
+        localStorage.setItem("stikers", JSON.stringify(filteredList)) 
     }
     const handleToggle = (label) =>{
          if (selectedArr.includes(label)) {
