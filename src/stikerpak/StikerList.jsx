@@ -31,6 +31,10 @@ export default function StickerList({stikers}){
         }
     }
     const [number,setNumber]= useState(()=>{
+        const saved = localStorage.getItem("clicks");
+        if (saved) {
+            return JSON.parse(saved);
+        }
         const counters = {};
         stikers.forEach(stik => {
             counters[stik.label] = 0
@@ -38,10 +42,14 @@ export default function StickerList({stikers}){
         return counters
     });
     const counter =(label)=>{
-        setNumber(prev=>({
-            ...prev,
+        setNumber(prev=>{
+            let saved = {
+                 ...prev,
         [label]: prev[label]+1
-        }))
+            }
+            localStorage.setItem('clicks', JSON.stringify(saved))
+            return saved
+        })
     }
     return(<>
     <ul className={css.stickerList}>
